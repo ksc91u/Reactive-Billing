@@ -25,7 +25,11 @@ public class SkuDetailsParser {
                 json.optString("price"),
                 json.optString("price_currency_code"),
                 json.optString("title"),
-                json.optString("description")
+                json.optString("description"),
+                json.optString("freeTrialPeriod"),
+                json.optString("subscriptionPeriod", ""),
+                json.optString("introductoryPricePeriod", ""),
+                json.optString("introductoryPrice", "")
         );
     }
 }

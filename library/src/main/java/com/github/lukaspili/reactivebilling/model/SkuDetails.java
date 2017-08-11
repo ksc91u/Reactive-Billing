@@ -73,7 +73,11 @@ public class SkuDetails {
         return description;
     }
 
-    public int getFreeTrialPeriod() {
+    public String getFreeTrialPeriod() {
+        return freeTrialPeriod;
+    }
+
+    public int getFreeTrialDays() {
         return parseTrialDate(freeTrialPeriod);
     }
 
